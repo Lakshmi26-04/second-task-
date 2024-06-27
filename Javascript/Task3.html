@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+ 
+<head>
+    <div>&#x2022; write a javascript program to calculate multiplication and division of</div> 
+    <div></div>two numbers(input from user) </div>
+    
+    <div>&#x2022; Sample Form:</div>
+    <style>
+        .nested-list {
+            border:1px solid black; /* Border around the list */
+            padding: 10px;
+            display: inline-block;
+            margin-left: 150px;
+            margin-top:70px;
+            
+        }
+    </style>
+    
+
+</head>
+ 
+<body>
+    <div class="nested-list">
+    <form>
+        1st Number : <input type="number" id="number" value="12" /><br>
+        2nd Number: <input type="number" id="number" value="10" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="DivideBy()" Value="Divide" />
+    </form>
+ 
+    <p>The Result is : <br>
+        <span id="result"></span>
+        120
+
+    </p>
+ 
+ 
+    <script>
+        function multiplyBy() {
+            num1 = document.getElementById(
+                "firstNumber").value;
+            num2 = document.getElementById(
+                "secondNumber").value;
+            document.getElementById(
+                "result").innerHTML = num1 * num2;
+        }
+    </script>
+    </div>
+</body>
+ 
+</html>
